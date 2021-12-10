@@ -11,8 +11,10 @@ Apache log4j2 开源日志组件远程代码执行
 3. 通过防火墙自定义规则，限制`jndi` 、`ldap` 等恶意payload
 4. 漏洞探测大多采用dnslog 等带外方式，可以禁掉服务器主动外联权限
 
-## 问题复现
-需要注意2.14.1 不能稳定复现，建议采用2.8.x 版本
+## 漏洞复现
+[详细复现步骤参考](https://github.com/dbgee/fastjson-rce)   ，与fastjson 的复现一致，只是使用的pom 文件不同而已
+
+* 需要注意2.14.1 不能稳定复现，建议采用2.8.x 版本
 
 ## 环境下载
 [log4j2_rce-0.0.1.jar](https://github.com/dbgee/log4j2_rce/releases/tag/0.0.1) 
