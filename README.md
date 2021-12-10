@@ -9,3 +9,6 @@ Apache log4j2 开源日志组件远程代码执行
 1. 修改配置  log4j2.formatMsgNoLookups=True
 2. 修改jvm参数 -Dlog4j2.formatMsgNoLookups=true
 3. 通过防火墙自定义规则，限制`jndi` 、`ldap` 等恶意payload
+
+## 问题复现
+需要注意2.14.1 不能稳定复现

