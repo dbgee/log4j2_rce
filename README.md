@@ -15,4 +15,4 @@ Apache log4j2 开源日志组件远程代码执行
 需要注意2.14.1 不能稳定复现，建议采用2.8.x 版本
 
 ## 环境下载
-[下载：log4j2_rce-0.0.1.jar](https://github.com/dbgee/log4j2_rce/releases/download/0.0.1/log4j2_rce-0.0.1.jar) 
+[log4j2_rce-0.0.1.jar](https://github.com/dbgee/log4j2_rce/releases/tag/0.0.1) 
