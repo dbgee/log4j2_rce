@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.kk</groupId>
     <artifactId>log4j2_rce</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>log4j2_rce</name>
     <description>poc for log4j2</description>
     <properties>
