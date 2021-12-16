@@ -1,4 +1,7 @@
 # Apache Log4j 2 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dbgee/log4j2_rce/rce%20CI)
+[![GitHub issues](https://img.shields.io/github/issues/dbgee/log4j2_rce)](https://github.com/dbgee/log4j2_rce/issues)
+
 Apache log4j2 开源日志组件远程代码执行
 
 > 攻击者通过构造恶意请求，触发服务器log4j 2 日志组件的远程代码执行漏洞。漏洞无需特殊配置，经验证，最新版的补丁可以防护此问题
