@@ -16,7 +16,7 @@ Apache log4j2 开源日志组件远程代码执行
 5. 漏洞探测大多采用dnslog 等带外方式，可以禁掉服务器主动外联权限
 
 ## 漏洞复现
-[详细复现步骤参考](https://github.com/dbgee/fastjson-rce)   ，与fastjson 的复现一致，只是使用的pom 文件不同而已
+[详细复现步骤参考 fastjson-rce](https://github.com/dbgee/fastjson-rce)   ，与fastjson 的复现一致，只是使用的pom 文件不同而已
 
 * 需要注意2.14.1 不能稳定复现，建议采用2.8.x 版本
 
